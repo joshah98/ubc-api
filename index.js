@@ -5,7 +5,7 @@ import coursesRoutes from './routes/courses.js';
 import morgan from 'morgan';
 
 const app = express();
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB
 const dbURI = 'mongodb+srv://admin:Strongpassword123@ubc-api-cluster.dfiae.mongodb.net/ubc-api-db?retryWrites=true&w=majority';
