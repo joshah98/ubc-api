@@ -3,9 +3,13 @@ import mongoose from "mongoose";
 import bodyParser from 'body-parser';
 import coursesRoutes from './routes/courses.js';
 import morgan from 'morgan';
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// Enable cross origin resource sharing
+app.use(cors());
 
 // Connect to MongoDB
 const dbURI = 'mongodb+srv://admin:Strongpassword123@ubc-api-cluster.dfiae.mongodb.net/ubc-api-db?retryWrites=true&w=majority';
